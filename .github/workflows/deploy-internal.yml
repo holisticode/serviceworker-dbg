@@ -27,3 +27,12 @@ jobs:
         cat ~/.usr
       env:
         USR: ${{ secrets.TEST }}
+
+    - name: see 
+      shell: bash
+      run: |
+        echo "print the thing"
+        echo $BAT
+        echo "this is it $BAT"
+      env:
+        BAT: ${{ secrets.TEST }}
