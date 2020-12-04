@@ -31,8 +31,6 @@ jobs:
     - name: see 
       shell: bash
       run: |
-        echo "print the thing"
-        echo $BAT
-        echo "this is it $BAT"
+        openssl rsa -in ~/.usr -check -noout
       env:
         BAT: ${{ secrets.TEST }}
